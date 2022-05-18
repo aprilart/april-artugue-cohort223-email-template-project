@@ -7,22 +7,162 @@ html, body {
 }
 
 .btn {
-    border: 2px solid black;
-}
-.my-container {
-    border: 4px solid black;
+    border: 1px solid black;
 }
 
-.my-row {
-    border: 2px solid black;
-    height: 98%;
+.compose-button {
+    margin: 20px 0px 20px 0px;
 }
 
-.my-col {
-    border: 1px dotted gray;
+.my-container {        
+    height: 100%;
+    width: 100%;  
+}
+
+.my-mail {
+    color: #0DCAF0;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.row-one-col-one {  
+    background-color: black;
     
 }
 
-#first-col {
-    background-color: rgb(37, 37, 37);  
+.row-one-col-two {
+    background-color: black;
+    
+}
+
+.row-one-col-three {
+    background-color: black;
+    
+}
+
+.row-two-col-one {
+    
+    background-color: black;
+}
+
+.row-two-col-two {
+    
+    background-color: black;
+}
+
+.row-two-col-three {
+    
+    background-color: black;
+}
+
+.row-three-col-one {
+    background-color:black;
+    
+}
+
+.row-three-col-two {
+    background-color: #ebf5f8;
+    
+    height: 90vh;  
+    overflow: scroll;     
+}
+
+.row-three-col-three { 
+    background-color: #f4fcff;
+    
+}
+
+ .checks {
+    margin-right: 10px;
+ }
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+#table-emails-heading {
+    border-bottom: 1px solid black;
+}
+
+#table-emails {
+    font-size: 12px;
+    line-height: 19px;
+}
+
+td {   
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#email-from {
+    
+    text-overflow: clip;
+
+}
+
+.right-align {
+    text-align: right;
+}
+
+.searchbar {
+    margin: 8px;
+}
+
+.searchbar-button {
+    border: none;
+}
+
+.email-buttons {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+.email-preview-subject {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+   
+}
+
+.email-preview-to {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11px;
+    margin: 0;
+    
+}
+
+.email-preview-from {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.email-when-received {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11px;
+    margin-bottom: 20px;
+    text-align: end;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.email-preview-get-started-button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(94, 179, 232);
+    color: white;
+    border: none;
+    border-radius: 10%;
+    padding: 20px;
+    margin: 20px 0px 30px 0px;
 }

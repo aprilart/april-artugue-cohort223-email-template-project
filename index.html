@@ -8,22 +8,116 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
         crossorigin="anonymous">
         
-        <title>Project: MyMail</title>
+        <title>Project: MyStuff</title>
 
         <link rel="stylesheet" href="index.css">
     </head>
 
     <body>
         
-        <div class="container my-container">
-            <div class="row my-row">
-                <div class="col-sm-3 col-md-2 my-col" id="first-col">
+        <div class="container-fluid my-container">
+
+            <div class="row row-one">
+
+                <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 d-flex justify-content-between align-items-center row-one-col-one">
+
+                    <a href="#" class="my-mail"><strong>MyStuff</strong></a>
+
+                </div>  
+
+                <div class="col-xs-3 col-sm-4 col-md-5 col-lg-5 d-flex justify-content-between align-items-center flex-wrap-wrap row-one-col-two">       
+                   
+                    <div class="input-group rounded searchbar">
+                        <input type="search" class="form-control rounded" placeholder="Search Email" aria-label="Search" aria-describedby="search-addon" />
+                        <span class="input-group-text border-0" id="search-addon">
+                            <!--searchbar search button-->
+                            <button type="submit" class="searchbar-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg></button>
+                        </span>
+                      </div>
+
+                </div>       
+                
+                <div class="col-xs-3 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-between align-items-center row-one-col-three">
+                    
+                </div>
+
+            </div>
+
+            <div class="row row-two">
+
+                <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 row-two-col-one">
+
+                </div>
+
+                <div class="col-xs-9 col-sm-4 col-md-5 d-flex justify-content-evenly align-items-center row-two-col-two">
+                     <!--archive button-->
+                     <button type="submit" class="email-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+                        <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+                    </svg></button>
+                    
+                    <!--mark as spam button-->
+                    <button type="submit" class="email-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-diamond" viewBox="0 0 16 16">
+                        <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                      </svg></button>
+
+                    <!--trashcan button-->
+                    <button type="submit" class="email-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                    </svg></button>
+
+                    <!--mark as unread button-->
+                    <button type="submit" class="email-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg></button>
+
+                    <!--mark as read button-->
+                    <button type="submit" class="email-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-paper" viewBox="0 0 16 16">
+                        <path d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2H4Zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6v-2.55Zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5.417Zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267v2.55Zm13 .566v5.734l-4.778-2.867L15 7.383Zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083l6.965 4.18ZM1 13.116V7.383l4.778 2.867L1 13.117Z"/>
+                      </svg></button>
+
+                    <!--forward mail button-->  
+                    <button type="submit" class="email-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                        <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                      </svg></button>
+                    
+                    <!--reply to mail button-->
+                    <button type="submit" class="email-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+                      </svg></button>
+
+                    <!--settings button-->
+                    <button type="submit" class="email-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                    </svg></button>
+
+                </div>
+
+                <div class="col-sm-5 col-md-5 row-two-col-three">
+
+                </div>
+
+            </div>
+
+            <div class="row row-three">
+
+                <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 row-three-col-one">
+
                     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
                         <div class="container-fluid flex-column">
-                            <a href="#" class="navbar-brand">MyMail</a>
+                            
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
+
+                            <button type="button" class="btn btn-info compose-button">Compose</button>
+                            
                             <div class="collapse navbar-collapse" id="navbarMenu">
                                 <ul class="navbar-nav flex-column">
                                     <li class="navbar-item">
@@ -53,24 +147,205 @@
                     </nav>
                 </div>  
             
-                <div class="col-sm-4 col-md-4 my-col">
-                    <nav class="navbar navbar-light bg-light">
-                        <div class="container-fluid">
-                          <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search Mail" aria-label="Search">
-                            <button class="btn btn-light" type="submit">Search</button>
-                          </form>
-                        </div>
-                    </nav>
-
-                    <h5><strong>Facebook</strong></h5>
-                    <h6>New Friend Request</h6>
-                    <p>April May wants to be your friend!</p>
+                <div class="col-xs-9 col-sm-9 col-md-5 row-three-col-two">
+                   
+                    <table class="table table-hover" id="table-emails">
+                        <tr id="table-emails-heading">
+                            <th><input class="checks" type="checkbox">From</th>
+                            <th>Subject</th>
+                            <th>Preview</th>
+                            <th class="right-align">Received</th>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Staples</strong></td>
+                            <td><strong>Office, hybrid, home: do your best work from anywhere</strong></td>
+                            <td>The right products to keep you productive.</td>
+                            <td class="right-align"><strong>1:43pm</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                            <td><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                            <td class="right-align"><strong>11:11am</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
+                            <td><strong>Our May Favorites</strong></td>
+                            <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
+                            <td class="right-align"><strong>9:07am</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Clockify</strong></td>
+                            <td><strong>Timer is still running in Clockify</strong></td>
+                            <td>Your timer is still running 8 hours and counting...</td>
+                            <td class="right-align"><strong>May 15</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
+                            <td><strong>Explore jobs similar to your job alert</strong></td>
+                            <td>View jobs in San, Ramon, California, United States</td>
+                            <td class="right-align"><strong>May 13</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>WordPress.com</strong></td>
+                            <td><strong>30% off Jet pack powered speed and reliability</strong></td>
+                            <td>Upgrade to WordPress.com Pro today Speed + Reliability.</td>
+                            <td class="right-align"><strong>May 10</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
+                            <td><strong>April, looking for a new job?</strong></td>
+                            <td>Get the most out of your LinkedIn experience</td>
+                            <td class="right-align"><strong>May 10</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Staples</strong></td>
+                            <td><strong>Office, hybrid, home: do your best work from anywhere</strong></td>
+                            <td>The right products to keep you productive.</td>
+                            <td class="right-align"><strong>May 8</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                            <td><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                            <td class="right-align"><strong>May 8</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
+                            <td><strong>Our May Favorites</strong></td>
+                            <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
+                            <td class="right-align"><strong>May 4</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
+                            <td><strong>April, looking for a new job?</strong></td>
+                            <td>Get the most out of your LinkedIn experience</td>
+                            <td class="right-align"><strong>May 1</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
+                            <td><strong>Our May Favorites</strong></td>
+                            <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
+                            <td class="right-align"><strong>April 30</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
+                            <td><strong>Explore jobs similar to your job alert</strong></td>
+                            <td>View jobs in San, Ramon, California, United States</td>
+                            <td class="right-align"><strong>April 29</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                            <td><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                            <td class="right-align"><strong>April 28</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Clockify</strong></td>
+                            <td><strong>Timer is still running in Clockify</strong></td>
+                            <td>Your timer is still running 8 hours and counting...</td>
+                            <td class="right-align"><strong>April 28</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
+                            <td><strong>Explore jobs similar to your job alert</strong></td>
+                            <td>View jobs in San, Ramon, California, United States</td>
+                            <td class="right-align"><strong>April 27</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>WordPress.com</strong></td>
+                            <td><strong>30% off Jet pack powered speed and reliability</strong></td>
+                            <td>Upgrade to WordPress.com Pro today Speed + Reliability.</td>
+                            <td class="right-align"><strong>April 27</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                            <td><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                            <td class="right-align"><strong>April 26</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
+                            <td><strong>Our May Favorites</strong></td>
+                            <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
+                            <td class="right-align"><strong>April 26</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
+                            <td><strong>April, looking for a new job?</strong></td>
+                            <td>Get the most out of your LinkedIn experience</td>
+                            <td class="right-align"><strong>April 24</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
+                            <td><strong>Explore jobs similar to your job alert</strong></td>
+                            <td>View jobs in San, Ramon, California, United States</td>
+                            <td class="right-align"><strong>April 24</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                            <td><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                            <td class="right-align"><strong>April 24</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Clockify</strong></td>
+                            <td><strong>Timer is still running in Clockify</strong></td>
+                            <td>Your timer is still running 8 hours and counting...</td>
+                            <td class="right-align"><strong>April 23</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
+                            <td><strong>Explore jobs similar to your job alert</strong></td>
+                            <td>View jobs in San, Ramon, California, United States</td>
+                            <td class="right-align"><strong>April 21</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>WordPress.com</strong></td>
+                            <td><strong>30% off Jet pack powered speed and reliability</strong></td>
+                            <td>Upgrade to WordPress.com Pro today Speed + Reliability.</td>
+                            <td class="right-align"><strong>April 21</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                            <td><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                            <td class="right-align"><strong>April 20</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
+                            <td><strong>Our May Favorites</strong></td>
+                            <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
+                            <td class="right-align"><strong>April 20</strong></td>
+                        </tr>
+                        <tr>
+                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
+                            <td><strong>April, looking for a new job?</strong></td>
+                            <td>Get the most out of your LinkedIn experience</td>
+                            <td class="right-align"><strong>April 20</strong></td>
+                        </tr>
+                    </table>                    
+                    
 
                 </div>
 
-                <div class="col-sm-5 col-md-6 my-col">
-                    <p>row 1, column 3</p>
+                <div class="col-sm-12 col-md-5 d-none d-sm-block row-three-col-three">
+                    <p class="email-preview-subject">30% off Jet pack powered speed and reliability</p>
+                    <p class="email-preview-to">To: april@mystuff.com</p>
+                    <p class="email-preview-from">From: donotreply@wordpress.com</p>
+                    <p class="email-when-received">May 10, 2022, 4:44am</p>
+
+                    <hr>
+
+                    <h1>Speed + Reliability.</h1>
+                    <p class="email-preview-body-one">When it comes to your website, <strong><em>you deserve the best</em></strong>. <a href="#">Upgrade today</a> to experience everything WordPress.com Pro has to offer. And when you use the code FLASH30ME at checkout, you’ll save 30% off your first year.</p>
+
+                    <p class="email-preview-body-two">From access to <strong>premium themes</strong> and <strong>expert support</strong>, to <strong>compatibility with over 50,000 WordPress plugins, advanced security features</strong>, and <a href="#">speed you can count on</a>, WordPress.com Pro gives you everything you need to supercharge your site.</p>
+
+                    <div class="d-flex justify-content-center"><button type="button" class="email-preview-get-started-button"><strong>Get started</strong></button></div>
+
+                    <p class="email-preview-body-three">This code <strong>FLASH30ME</strong> expires on Friday, May 13, so don’t delay!</p>
+
                 </div>
             </div>
         </div> 
