@@ -27,7 +27,7 @@ html, body {
 
 .row-one-col-one {  
     background-color: black;
-    
+     
 }
 
 .row-one-col-two {
@@ -62,14 +62,14 @@ html, body {
 
 .row-three-col-two {
     background-color: #ebf5f8;
-    
+   
     height: 90vh;  
     overflow: scroll;     
 }
 
 .row-three-col-three { 
     background-color: #f4fcff;
-    
+   
 }
 
  .checks {
