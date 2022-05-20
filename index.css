@@ -10,6 +10,13 @@ html, body {
     border: 1px solid black;
 }
 
+.toggle-button {
+    display: flex;
+    align-self: flex-start;
+
+
+}
+
 .compose-button {
     margin: 20px 0px 20px 0px;
 }
