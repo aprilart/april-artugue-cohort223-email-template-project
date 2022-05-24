@@ -31,7 +31,7 @@
                                 
                                 </div>
                             </div>
-                            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                            <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
                                 <div class="container-fluid">
                                 <button class="navbar-toggler toggle-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
@@ -73,7 +73,11 @@
                 </div>
 
                 <!--row two, column two-->
-                <div class="col-xs-9 col-sm-6 col-md-5 d-flex justify-content-evenly align-items-center row-two-col-two">
+                <div class="col-xs-9 col-sm-6 col-md-5 d-flex justify-content-between align-items-center row-two-col-two">
+                    <!--select all button-->
+                    <button type="submit" class="email-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                      </svg></button>
                      <!--archive button-->
                      <button type="submit" class="email-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
                         <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
@@ -134,7 +138,7 @@
                 <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 row-three-col-one">
 
                     <!--side navbar to expand at large screen or higher-->
-                    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
 
                         <!--container with flex column makes list and button align and stack vertically-->
                         <div class="container-fluid flex-column">
@@ -144,7 +148,7 @@
                             <div class="collapse flex-column navbar-collapse" id="navbarMenu">
 
                                 <!--compose email button, added to toggle, navbarMenu-->
-                                <button type="button" class="btn btn-info compose-button">Compose</button>
+                                <button type="button" class="btn btn-light compose-button">Compose</button>
                                 
                                 <!--side navbar items as list-->
                                 <ul class="navbar-nav flex-column">
@@ -181,204 +185,200 @@
                    
                     <!--table used for email list content-->
                     <table class="table table-hover" id="table-emails">
-                        <tr id="table-emails-heading">
-                            <th><input class="checks" type="checkbox">From</th>
-                            <th>Subject</th>
-                            <th>Preview</th>
-                            <th class="right-align">Received</th>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Staples</strong></td>
-                            <td id="email-subject"><strong>Office, hybrid, home: do your best work from anywhere</strong></td>
-                            <td>The right products to keep you productive.</td>
-                            <td class="right-align"><strong>1:43pm</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
-                            <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
-                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
-                            <td class="right-align"><strong>11:11am</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
-                            <td id="email-subject"><strong>Our May Favorites</strong></td>
-                            <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
-                            <td class="right-align"><strong>9:07am</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Clockify</strong></td>
-                            <td id="email-subject"><strong>Timer is still running in Clockify</strong></td>
-                            <td>Your timer is still running 8 hours and counting...</td>
-                            <td class="right-align"><strong>May 15</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
-                            <td id="email-subject"><strong>Explore jobs similar to your job alert</strong></td>
-                            <td>View jobs in San, Ramon, California, United States</td>
-                            <td class="right-align"><strong>May 13</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox">WordPress.com</td>
-                            <td id="email-subject">30% off Jet pack powered speed and reliability</td>
-                            <td>Upgrade to WordPress.com Pro today Speed + Reliability.</td>
-                            <td class="right-align">May 10</td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
-                            <td id="email-subject"><strong>April, looking for a new job?</strong></td>
-                            <td>Get the most out of your LinkedIn experience</td>
-                            <td class="right-align"><strong>May 10</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Staples</strong></td>
-                            <td id="email-subject"><strong>Office, hybrid, home: do your best work from anywhere</strong></td>
-                            <td>The right products to keep you productive.</td>
-                            <td class="right-align"><strong>May 8</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
-                            <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
-                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
-                            <td class="right-align"><strong>May 8</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
-                            <td id="email-subject"><strong>Our May Favorites</strong></td>
-                            <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
-                            <td class="right-align"><strong>May 4</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
-                            <td id="email-subject"><strong>April, looking for a new job?</strong></td>
-                            <td>Get the most out of your LinkedIn experience</td>
-                            <td class="right-align"><strong>May 1</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
-                            <td id="email-subject"><strong>Our May Favorites</strong></td>
-                            <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
-                            <td class="right-align"><strong>April 30</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
-                            <td id="email-subject"><strong>Explore jobs similar to your job alert</strong></td>
-                            <td>View jobs in San, Ramon, California, United States</td>
-                            <td class="right-align"><strong>April 29</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
-                            <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
-                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
-                            <td class="right-align"><strong>April 28</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Clockify</strong></td>
-                            <td id="email-subject"><strong>Timer is still running in Clockify</strong></td>
-                            <td>Your timer is still running 8 hours and counting...</td>
-                            <td class="right-align"><strong>April 28</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
-                            <td id="email-subject"><strong>Explore jobs similar to your job alert</strong></td>
-                            <td>View jobs in San, Ramon, California, United States</td>
-                            <td class="right-align"><strong>April 27</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>WordPress.com</strong></td>
-                            <td id="email-subject"><strong>30% off Jet pack powered speed and reliability</strong></td>
-                            <td>Upgrade to WordPress.com Pro today Speed + Reliability.</td>
-                            <td class="right-align"><strong>April 27</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
-                            <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
-                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
-                            <td class="right-align"><strong>April 26</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
-                            <td id="email-subject"><strong>Our May Favorites</strong></td>
-                            <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
-                            <td class="right-align"><strong>April 26</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
-                            <td id="email-subject"><strong>April, looking for a new job?</strong></td>
-                            <td>Get the most out of your LinkedIn experience</td>
-                            <td class="right-align"><strong>April 24</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
-                            <td id="email-subject"><strong>Explore jobs similar to your job alert</strong></td>
-                            <td>View jobs in San, Ramon, California, United States</td>
-                            <td class="right-align"><strong>April 24</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
-                            <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
-                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
-                            <td class="right-align"><strong>April 24</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Clockify</strong></td>
-                            <td id="email-subject"><strong>Timer is still running in Clockify</strong></td>
-                            <td>Your timer is still running 8 hours and counting...</td>
-                            <td class="right-align"><strong>April 23</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
-                            <td id="email-subject"><strong>Explore jobs similar to your job alert</strong></td>
-                            <td>View jobs in San, Ramon, California, United States</td>
-                            <td class="right-align"><strong>April 21</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>WordPress.com</strong></td>
-                            <td id="email-subject"><strong>30% off Jet pack powered speed and reliability</strong></td>
-                            <td>Upgrade to WordPress.com Pro today Speed + Reliability.</td>
-                            <td class="right-align"><strong>April 21</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
-                            <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
-                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
-                            <td class="right-align"><strong>April 20</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
-                            <td><strong>Our May Favorites</strong></td>
-                            <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
-                            <td class="right-align"><strong>April 20</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
-                            <td id="email-subject"><strong>April, looking for a new job?</strong></td>
-                            <td>Get the most out of your LinkedIn experience</td>
-                            <td class="right-align"><strong>April 20</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>WordPress.com</strong></td>
-                            <td id="email-subject"><strong>30% off Jet pack powered speed and reliability</strong></td>
-                            <td>Upgrade to WordPress.com Pro today Speed + Reliability.</td>
-                            <td class="right-align"><strong>April 19</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
-                            <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
-                            <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
-                            <td class="right-align"><strong>April 19</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
-                            <td id="email-subject"><strong>Our May Favorites</strong></td>
-                            <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
-                            <td class="right-align"><strong>April 18</strong></td>
-                        </tr>
-                        <tr>
-                            <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
-                            <td id="email-subject"><strong>April, looking for a new job?</strong></td>
-                            <td>Get the most out of your LinkedIn experience</td>
-                            <td class="right-align"><strong>April 18</strong></td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Staples</strong></td>
+                                <td id="email-subject"><strong>Office, hybrid, home: do your best work from anywhere</strong></td>
+                                <td>The right products to keep you productive.</td>
+                                <td class="right-align"><strong>1:43pm</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                                <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                                <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                                <td class="right-align"><strong>11:11am</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
+                                <td id="email-subject"><strong>Our May Favorites</strong></td>
+                                <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
+                                <td class="right-align"><strong>9:07am</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Clockify</strong></td>
+                                <td id="email-subject"><strong>Timer is still running in Clockify</strong></td>
+                                <td>Your timer is still running 8 hours and counting...</td>
+                                <td class="right-align"><strong>May 15</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
+                                <td id="email-subject"><strong>Explore jobs similar to your job alert</strong></td>
+                                <td>View jobs in San, Ramon, California, United States</td>
+                                <td class="right-align"><strong>May 13</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox">WordPress.com</td>
+                                <td id="email-subject">30% off Jet pack powered speed and reliability</td>
+                                <td>Upgrade to WordPress.com Pro today Speed + Reliability.</td>
+                                <td class="right-align">May 10</td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
+                                <td id="email-subject"><strong>April, looking for a new job?</strong></td>
+                                <td>Get the most out of your LinkedIn experience</td>
+                                <td class="right-align"><strong>May 10</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Staples</strong></td>
+                                <td id="email-subject"><strong>Office, hybrid, home: do your best work from anywhere</strong></td>
+                                <td>The right products to keep you productive.</td>
+                                <td class="right-align"><strong>May 8</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                                <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                                <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                                <td class="right-align"><strong>May 8</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
+                                <td id="email-subject"><strong>Our May Favorites</strong></td>
+                                <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
+                                <td class="right-align"><strong>May 4</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
+                                <td id="email-subject"><strong>April, looking for a new job?</strong></td>
+                                <td>Get the most out of your LinkedIn experience</td>
+                                <td class="right-align"><strong>May 1</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
+                                <td id="email-subject"><strong>Our May Favorites</strong></td>
+                                <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
+                                <td class="right-align"><strong>April 30</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
+                                <td id="email-subject"><strong>Explore jobs similar to your job alert</strong></td>
+                                <td>View jobs in San, Ramon, California, United States</td>
+                                <td class="right-align"><strong>April 29</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                                <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                                <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                                <td class="right-align"><strong>April 28</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Clockify</strong></td>
+                                <td id="email-subject"><strong>Timer is still running in Clockify</strong></td>
+                                <td>Your timer is still running 8 hours and counting...</td>
+                                <td class="right-align"><strong>April 28</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
+                                <td id="email-subject"><strong>Explore jobs similar to your job alert</strong></td>
+                                <td>View jobs in San, Ramon, California, United States</td>
+                                <td class="right-align"><strong>April 27</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>WordPress.com</strong></td>
+                                <td id="email-subject"><strong>30% off Jet pack powered speed and reliability</strong></td>
+                                <td>Upgrade to WordPress.com Pro today Speed + Reliability.</td>
+                                <td class="right-align"><strong>April 27</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                                <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                                <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                                <td class="right-align"><strong>April 26</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
+                                <td id="email-subject"><strong>Our May Favorites</strong></td>
+                                <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
+                                <td class="right-align"><strong>April 26</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
+                                <td id="email-subject"><strong>April, looking for a new job?</strong></td>
+                                <td>Get the most out of your LinkedIn experience</td>
+                                <td class="right-align"><strong>April 24</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
+                                <td id="email-subject"><strong>Explore jobs similar to your job alert</strong></td>
+                                <td>View jobs in San, Ramon, California, United States</td>
+                                <td class="right-align"><strong>April 24</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                                <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                                <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                                <td class="right-align"><strong>April 24</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Clockify</strong></td>
+                                <td id="email-subject"><strong>Timer is still running in Clockify</strong></td>
+                                <td>Your timer is still running 8 hours and counting...</td>
+                                <td class="right-align"><strong>April 23</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn Job Alerts</strong></td>
+                                <td id="email-subject"><strong>Explore jobs similar to your job alert</strong></td>
+                                <td>View jobs in San, Ramon, California, United States</td>
+                                <td class="right-align"><strong>April 21</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>WordPress.com</strong></td>
+                                <td id="email-subject"><strong>30% off Jet pack powered speed and reliability</strong></td>
+                                <td>Upgrade to WordPress.com Pro today Speed + Reliability.</td>
+                                <td class="right-align"><strong>April 21</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                                <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                                <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                                <td class="right-align"><strong>April 20</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
+                                <td><strong>Our May Favorites</strong></td>
+                                <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
+                                <td class="right-align"><strong>April 20</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
+                                <td id="email-subject"><strong>April, looking for a new job?</strong></td>
+                                <td>Get the most out of your LinkedIn experience</td>
+                                <td class="right-align"><strong>April 20</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>WordPress.com</strong></td>
+                                <td id="email-subject"><strong>30% off Jet pack powered speed and reliability</strong></td>
+                                <td>Upgrade to WordPress.com Pro today Speed + Reliability.</td>
+                                <td class="right-align"><strong>April 19</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Disney On Ice</strong></td>
+                                <td id="email-subject"><strong>Extended Sneak Peek featuring Frozen</strong></td>
+                                <td>Experience immersive Disney stories brought to life through world-class ice skating</td>
+                                <td class="right-align"><strong>April 19</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>Barnes & Noble</strong></td>
+                                <td id="email-subject"><strong>Our May Favorites</strong></td>
+                                <td>Spellbinding reimaginings, swoonworthy rom-coms page-turning thrillers & more.</td>
+                                <td class="right-align"><strong>April 18</strong></td>
+                            </tr>
+                            <tr>
+                                <td id="email-from"><input class="checks" type="checkbox"><strong>LinkedIn</strong></td>
+                                <td id="email-subject"><strong>April, looking for a new job?</strong></td>
+                                <td>Get the most out of your LinkedIn experience</td>
+                                <td class="right-align"><strong>April 18</strong></td>
+                            </tr>
+                        </tbody>
                     </table>                    
                     
                 </div>
@@ -388,9 +388,10 @@
 
                     <!--email preview area-->
                     <p class="email-preview-subject">30% off Jet pack powered speed and reliability</p>
+                    <p class="email-when-received">May 10, 2022, 4:44am</p>
                     <p class="email-preview-to">To: april@mystuff.com</p>
                     <p class="email-preview-from">From: donotreply@wordpress.com</p>
-                    <p class="email-when-received">May 10, 2022, 4:44am</p>
+                    
 
                     <hr>
 
