@@ -13,8 +13,7 @@ html, body {
 .toggle-button {
     display: flex;
     align-self: flex-start;
-
-
+    border: transparent;
 }
 
 .compose-button {
@@ -34,50 +33,41 @@ html, body {
 
 .row-one-col-one {  
     background-color: black;
-     
 }
 
 .row-one-col-two {
     background-color: black;
-    
 }
 
 .row-one-col-three {
     background-color: black;
-    
 }
 
 .row-two-col-one {
-    
     background-color: black;
     color: whitesmoke;
 }
 
 .row-two-col-two {
-    
     background-color: black;
 }
 
 .row-two-col-three {
-    
     background-color: black;
 }
 
 .row-three-col-one {
     background-color:black;
-    
 }
 
 .row-three-col-two {
     background-color: #ebf5f8;
-   
     height: 90vh;  
     overflow: scroll;     
 }
 
 .row-three-col-three { 
     background-color: #f4fcff;
-   
 }
 
  .checks {
@@ -106,9 +96,11 @@ td {
 }
 
 #email-from {
-    
     text-overflow: clip;
+}
 
+#email-subject {
+    text-overflow: clip;
 }
 
 .right-align {
@@ -134,14 +126,12 @@ td {
 .email-preview-subject {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
-   
 }
 
 .email-preview-to {
     font-family: 'Times New Roman', Times, serif;
     font-size: 11px;
     margin: 0;
-    
 }
 
 .email-preview-from {
